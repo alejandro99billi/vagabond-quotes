@@ -1,6 +1,6 @@
 <div>
   <div class="head">
-    <h1>Musahi miyamoto</h1>
+    <h1>Musahi Miyamoto</h1>
     <div class="conter-quotes">
       <img
         class="animate__animated animate__fadeInLeft animate__slower"
@@ -8,10 +8,12 @@
     "
         alt="miyamoto"
         (click)="playMusic()"
+        id="imageQuote0"
       />
       <div style="display: flex; align-items: center; padding-left: 20px">
         <p
           class="animate__animated animate__fadeInRight animate__slower quote-text animate__delay-2s"
+          id="textQuote0"
         >
           Miyamoto Mushashi was a samurai, <br />
           that killed 70 mens, <br />
@@ -26,13 +28,13 @@
     </div>
 
     <div class="body-text">
-      <p>
+      <p class="animate__animated animate__fadeInUp animate__delay-8s">
         So you wanna see the way widely, <br />
         let's see some quotes that you can found <br />
         in the manga <strong>Vagabond</strong> create By the master: <br />
         <strong>Takehiko Inoue</strong>
       </p>
-      <div class="conter-quotes">
+      <!-- <div class="conter-quotes">
         <img
           src="/../assets/images/quote1.jpg"
           alt="quote1"
@@ -41,15 +43,6 @@
 
         <p class="quote-text">
           Whatever happens, happens... <br />
-          <!-- think about your big problem <br />
-              is next to you ready to atack <br />
-              and what will do you? <br />
-              take a breath... <br />
-              in the most case <br />
-              what is worts thingh can <br />
-              be happens, the presente <br />
-              is the moment that you can <br />
-              use in focus in yourself <br /> -->
           and the things that make you happy <br />
           When faced with life's challenges, <br />
           consider that your greatest adversary <br />
@@ -64,23 +57,24 @@
           <strong> that bring you happiness.</strong>
         </p>
       </div>
-    </div>
+    </div> -->
 
-    <audio
-      id="myAudio"
-      src="/../assets/music/AruarianDance.mp3"
-      controls
-      autoplay
-      loop
-      hidden
-    >
-      <p>
-        If you are reading this, it is because your browser does not support the
-        audio element.
-      </p>
-    </audio>
+      <audio
+        id="myAudio"
+        src="/../assets/music/AruarianDance.mp3"
+        controls
+        autoplay
+        loop
+        hidden
+      >
+        <p>
+          If you are reading this, it is because your browser does not support
+          the audio element.
+        </p>
+      </audio>
+    </div>
   </div>
-</div>
-<div>
-  <app-footpage></app-footpage>
+  <div>
+    <app-footpage></app-footpage>
+  </div>
 </div>

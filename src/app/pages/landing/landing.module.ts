@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { LandingRouterModuleModule } from './landing-router-module.module';
 import { FootpageModule } from 'src/app/components/footpage/footpage.module';
+import { CustomButtomModule } from 'src/app/components/custom-buttom/custom-buttom.module';
 
 
 
@@ -13,7 +14,8 @@ import { FootpageModule } from 'src/app/components/footpage/footpage.module';
   imports: [
     CommonModule,
     LandingRouterModuleModule,
-    FootpageModule
+    FootpageModule,
+    CustomButtomModule
   ]
 })
 export class LandingModule { }
