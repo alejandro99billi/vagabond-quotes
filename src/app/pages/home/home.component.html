@@ -1,24 +1,30 @@
 <div>
   <div class="head">
     <h1>Musahi miyamoto</h1>
+    <div class="conter-quotes">
+      <img
+        class="animate__animated animate__fadeInLeft animate__slower"
+        src="/../assets/images/miyamoto-about-art.jpg
+    "
+        alt="miyamoto"
+        (click)="playMusic()"
+      />
+      <div style="display: flex; align-items: center; padding-left: 20px">
+        <p
+          class="animate__animated animate__fadeInRight animate__slower quote-text animate__delay-2s"
+        >
+          Miyamoto Mushashi was a samurai, <br />
+          that killed 70 mens, <br />
+          and say this quote:
+          <br />
+          <strong>
+            Once you understand the way broadly, <br />
+            you can see it in all things.</strong
+          >
+        </p>
+      </div>
+    </div>
 
-    <span>click on Musashi</span>
-    <img
-      class="principal-image"
-      src="/../assets/images/miyamoto.jpg
-      "
-      alt="miyamoto"
-      (click)="playMusic()"
-    />
-
-    <p>
-      Miyamoto Mushashi was a samurai, that killed 70 mens, and say this quate:
-      <br />
-      <strong>
-        Once you understand the way broadly, you can see it in all
-        things.</strong
-      >
-    </p>
     <div class="body-text">
       <p>
         So you wanna see the way widely, <br />
@@ -62,7 +68,7 @@
 
     <audio
       id="myAudio"
-      src="/../assets/music/Ladyfingers.mp3"
+      src="/../assets/music/AruarianDance.mp3"
       controls
       autoplay
       loop
@@ -74,4 +80,7 @@
       </p>
     </audio>
   </div>
+</div>
+<div>
+  <app-footpage></app-footpage>
 </div>

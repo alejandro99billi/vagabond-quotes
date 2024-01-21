@@ -1,6 +1,4 @@
-.principal-image{
-  
-}
+@import 'animate.css';
 
 .head{
     display: flex;
@@ -56,6 +54,8 @@
 
  .conter-quotes{
     display: flex;
+    justify-content: center;
+  
 
  }
 
@@ -65,4 +65,7 @@
     text-decoration: dotted;
     color: #39434b;
     font-style: italic;
+   --animate-duration: 0.7s;
  }
+
+ 
