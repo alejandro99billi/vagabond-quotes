@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,18 +12,23 @@ export class AppComponent implements OnInit  {
     { title: 'Ladyfingers', link: '/assets/music/Ladyfingers.mp3' }
   ]; 
 
-  ngOnInit() {
-    this.initAudio();
-  }
- 
-  playMusic(){
-    const audio = document.getElementById('myAudio') as HTMLAudioElement;
-    audio.play();
+   constructor(private router: Router){
+
   }
 
-  autoplay = true;
-  initAudio() {
-    const audio = document.getElementById('myAudio') as HTMLAudioElement;
-    audio.play();
+  ngOnInit() {
+   // this.initAudio();
   }
+ 
+  // playMusic(){
+  //   const audio = document.getElementById('myAudio') as HTMLAudioElement;
+  //   audio.play();
+  //   this.router.navigate(['/landing'])
+  // }
+
+  // autoplay = true;
+  // initAudio() {
+  //   const audio = document.getElementById('myAudio') as HTMLAudioElement;
+  //   audio.play();
+  // }
 }
