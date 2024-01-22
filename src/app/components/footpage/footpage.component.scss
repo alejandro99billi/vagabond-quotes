@@ -1,5 +1,17 @@
 .footer-container{
     background-color: #333333;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
     
+    height: 80px;
+    color: #7c8896;     
+    font-size: 40px;
+    bottom: 0;
+  
+    >a{
+        font-style: italic;
+        font-size: 30px;
+        color:   #7c8896;
+      
+    }
 }

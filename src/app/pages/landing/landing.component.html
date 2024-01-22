@@ -1,18 +1,42 @@
 <div class="container">
   <img
+    *ngIf="!showSecondImage"
+    id="wall1"
     src="/../assets/images/musashi-wall.jpeg"
     alt="wallpaper"
-    class="landing-image"
+    class="landing-image animate__animated animate__fadeInLeft animate__slower"
   />
-  <p>
-    Musashi miyamoto was a famous ronin samurai and philosopher <br />
-    in this page i want show you some reflexions
-  </p>
-
-  <app-custom-buttom
-    description="Let's start with the travel"
-    (action)="goHome()"
-  ></app-custom-buttom>
+  <img
+    id="wall2"
+    *ngIf="showSecondImage"
+    src="/../assets/images/mushashiVSkojiro.webp"
+    alt="wallpaper"
+    class="landing-image animate__animated animate__fadeInLeft animate__slower"
+  />
+  <!-- <img
+    id="wall3"
+    *ngIf="showThirdImage"
+    src="/../assets/images/mushashi-wall.webp"
+    alt="wallpaper"
+    class="landing-image animate__animated animate__fadeInLeft animate__slower"
+  /> -->
+  <h2 id="text1">
+    Musashi Miyamoto, a renowned ronin samurai and philosopher, graces these
+    pages with a collection of reflections. <br />
+    These profound insights were discovered within the pages of the masterpiece
+    <a href="https://en.wikipedia.org/wiki/Vagabond_(manga)"> 'Vagabond' </a>,
+    created by the masterful artist
+    <a href="https://en.wikipedia.org/wiki/Takehiko_Inoue"> Takehiko Inoue.</a
+    ><br />
+    'Vagabond' is a captivating manga that intricately weaves the tale of
+    Musashi's life, making it a true masterpiece in the world of manga.
+  </h2>
+  <div class="buttom-container">
+    <app-custom-buttom
+      description="Let's start with the travel"
+      (action)="goHome()"
+    ></app-custom-buttom>
+  </div>
 </div>
 <div>
   <app-footpage></app-footpage>

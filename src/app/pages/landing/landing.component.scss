@@ -1,6 +1,6 @@
 .landing-image{
     width: 80%;
-    height: 80%;
+    height: 70%;
     padding: 20px;
   
 }
@@ -9,9 +9,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  padding-top: 100px;
-    // padding-left: 100px;
-    align-items: center; /* Esto centrará la imagen horizontalmente */
+  padding-top: 100px; 
+    align-items: center; 
     height: 100vh;
     background-color: #6b7a87;
     padding-bottom: 15px;
@@ -19,5 +18,20 @@
     >p{
         size: 20px;
     }
+
+ 
 }
 
+.buttom-container{
+    margin-bottom: 20px;
+}
+
+#text1{
+    color: #333333;     
+    font-size: 20px;
+    >a{
+        font-style: italic;
+     
+        color: #333333;     
+    }
+}
