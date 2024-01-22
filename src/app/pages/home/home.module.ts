@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { HomeRouterModule } from './home-router.module';
 import { FootpageComponent } from 'src/app/components/footpage/footpage.component';
 import { FootpageModule } from 'src/app/components/footpage/footpage.module';
+import { QuotesContainerModule } from 'src/app/components/quotes-container/quotes-container.module';
 
 
 
@@ -14,7 +15,8 @@ import { FootpageModule } from 'src/app/components/footpage/footpage.module';
   imports: [
     CommonModule,
     HomeRouterModule,
-    FootpageModule
+    FootpageModule,
+    QuotesContainerModule,
   ]
 })
 export class HomeModule { }
