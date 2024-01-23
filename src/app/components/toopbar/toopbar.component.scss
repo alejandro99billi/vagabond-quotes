@@ -1,0 +1,49 @@
+.container{
+    height: 12vh;
+    background-color: #7c8896;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;;
+}
+
+
+  .right-container{
+     flex: 1;
+     height: 100%;
+    background-size: 20% 100% !important; 
+    //  background-position: 20px right !important;  
+  //background-image: url('/../assets/images/color-see2.jpg'); 
+   background-position: left; 
+    background-size: cover; 
+   background-repeat: no-repeat;
+  }
+
+
+  .left-container{
+    size: 100%;
+    flex: 1;
+    background-size: 100% 100% ; 
+    //  background-position: 20px right !important;  
+    background-image: url('/../assets/images/color-mushashi.jpg'); 
+   // background-position: left; 
+    background-size: contain; 
+ //   background-repeat: no-repeat;
+  }
+
+  .title{
+    color: #333333;     
+    font-size: 15px;
+  }
+
+
+  
+ .back-ground {
+    // padding-left: 10px;
+    background-size: 10% 100% !important; 
+    //  background-position: 20px right !important;  
+  //background-image: url('/../assets/images/color-mushashi.jpg'); 
+    background-position: left; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+  }

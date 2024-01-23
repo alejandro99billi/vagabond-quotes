@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { RouterOutlet } from '@angular/router';
 import { FootpageModule } from '../footpage/footpage.module';
+import { ToopbarModule } from '../toopbar/toopbar.module';
 
 
 
@@ -13,7 +14,8 @@ import { FootpageModule } from '../footpage/footpage.module';
   imports: [
     CommonModule,
     RouterOutlet,
-    FootpageModule
+    FootpageModule,
+    ToopbarModule,
   ],
   exports:[
     LayoutComponent
