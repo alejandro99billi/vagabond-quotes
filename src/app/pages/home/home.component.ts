@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit  {
 
   ngOnInit() {
     this.initAudio();
-    this.addFadeOutAnimation('imageQuote0','textQuote0',5000)
   }
  
   playMusic(){
@@ -49,8 +48,6 @@ export class HomeComponent implements OnInit  {
     audio.play();
     
   }
-
-  
   
 
 }

@@ -1,25 +1,59 @@
 <div class="conter-quotes">
-  <img
-    class="animate__animated animate__fadeInLeft animate__slower"
-    src="/../assets/images/miyamoto-about-art.jpg
-  "
-    alt="miyamoto"
-    (click)="playMusic()"
-    id="imageQuote0"
-  />
-  <div style="display: flex; align-items: center; padding-left: 20px">
-    <p
-      class="animate__animated animate__fadeInRight animate__slower quote-text animate__delay-2s"
-      id="textQuote0"
-    >
-      Miyamoto Mushashi was a samurai, <br />
-      that killed 70 mens, <br />
-      and say this quote:
-      <br />
-      <strong>
-        Once you understand the way broadly, <br />
-        you can see it in all things.</strong
+  <ng-container *ngIf="isFirstContainerVisible">
+    <div class="text-continer">
+      <p
+        class="animate__animated animate__fadeInLeft animate__slower quote-text animate__delay-2s"
+        id="textQuote0"
       >
-    </p>
-  </div>
+        Miyamoto Mushashi was a samurai, <br />
+        that killed 70 mens, <br />
+        and say this quote:
+        <br />
+        <strong>
+          Once you understand the way broadly, <br />
+          you can see it in all things.</strong
+        >
+      </p>
+    </div>
+    <img
+      class="animate__animated animate__fadeInRight animate__slower quote-images"
+      src="/../assets/images/miyamoto-about-art.jpg
+  "
+      alt="miyamoto"
+      id="imageQuote0"
+    />
+  </ng-container>
+  <ng-container *ngIf="!isFirstContainerVisible">
+    <div class="text-continer">
+      <p
+        class="quote-text animate__animated animate__fadeInLeft animate__slower quote-text animate__delay-2s"
+      >
+        Whatever happens, happens... <br />
+        and the things that make you happy <br />
+        When faced with life's challenges, <br />
+        consider that your greatest adversary <br />
+        is often right beside you, <br />
+        ready to strike. <br />
+        The question is, how will you respond? <br />Take a moment to breathe,
+        for in most cases, <br />
+        the worst thing that can happen <br />is already in the past or maybe in
+        the future. <br />
+        The present moment offers an opportunity <br />
+        to focus on yourself and the things <br />
+        <strong> that bring you happiness.</strong>
+      </p>
+    </div>
+    <img
+      src="/../assets/images/quote1.jpg"
+      alt="quote1"
+      id="imageQuote1"
+      class="animate__animated animate__fadeInRight animate__slower quote-images"
+    />
+  </ng-container>
+</div>
+<div class="custom-button">
+  <app-custom-buttom
+    description="Next Quote"
+    (action)="goToQuote()"
+  ></app-custom-buttom>
 </div>

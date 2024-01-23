@@ -44,17 +44,15 @@
 
  .quote-images{
     margin: 10px 10px;
-    width: 400px;
-    height: 400px;
-    background-color:  #7c8896; 
-     width: 600px;
+    width: 60vh;
+    height: 50vh;
     padding: 10px;
+    margin-left: 15vh;
  }
 
  .conter-quotes{
     display: flex;
     justify-content: center;
-  
 
  }
 
@@ -64,7 +62,19 @@
     text-decoration: dotted;
     color: #39434b;
     font-style: italic;
-   --animate-duration: 0.7s;
+   // --animate-duration: 0.9s;
  }
 
- 
+ .custom-button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ }
+
+ .text-continer{
+   display: flex; 
+   align-items: center; 
+   padding-left: 20px
+ }
