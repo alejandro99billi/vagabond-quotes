@@ -2,9 +2,125 @@
 @import 'animate.css';
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+* {
+    box-sizing: border-box;
+  }
 
 body {
     margin: 0;
     padding: 0;
     user-select: none;
 }
+
+// /* Estilos para pantallas pequeñas (móviles) */
+// @media screen and (max-width: 600px) {
+//     /* Agrega estilos específicos para pantallas pequeñas aquí */
+  
+//     body {
+//       font-size: 14px; /* Cambia el tamaño de fuente para dispositivos móviles */
+//     }
+  
+//     .header {
+//       display: none; /* Oculta el encabezado en pantallas pequeñas */
+//     }
+  
+//     .menu-icon {
+//       display: block; /* Muestra un ícono de menú en lugar del menú en pantalla pequeña */
+//     }
+//   }
+  
+//   @media screen and (min-width: 601px) and (max-width: 1024px) {
+//     /* Agrega estilos específicos para pantallas medianas aquí */
+  
+//     .content {
+//       width: 80%; /* Ajusta el ancho del contenido en tablets */
+//       margin: 0 auto; /* Centra el contenido en pantallas medianas */
+//     }
+  
+//     .sidebar {
+//       display: none; /* Oculta la barra lateral en tablets */
+//     }
+//   }
+// /* Estilos para pantallas grandes (escritorios) */
+// @media screen and (min-width: 1025px) {
+//     /* Agrega estilos específicos para pantallas grandes aquí */
+  
+//     .header {
+//       background-color: #333; /* Cambia el color de fondo del encabezado en escritorios */
+//     }
+  
+//     .menu {
+//       display: block; /* Muestra el menú en la parte superior en escritorios */
+//     }
+  
+//     .footer {
+//       position: fixed; /* Fija el pie de página en la parte inferior de la pantalla en escritorios */
+//       bottom: 0;
+//       left: 0;
+//       width: 100%;
+//     }
+//   }
+
+@media only screen and (min-width: 600px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+  
+    .footer {
+      height: 100px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+  }

@@ -1,10 +1,11 @@
 .app-container {
-    min-height: 100vh; /* Establece una altura mínima del 100% de la altura de la ventana */
+    min-height: 100%;
+    width: 100%; 
     display: flex;
     flex-direction: column;
   }
   
-  /* Estilo para el área de contenido principal */
+
   router-outlet {
-    flex: 1; /* Ocupa el espacio disponible */
+    flex: 1; 
   }

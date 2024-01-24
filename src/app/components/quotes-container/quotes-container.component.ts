@@ -14,7 +14,7 @@ export class QuotesContainerComponent implements OnInit {
   }
 
   ngOnInit() {
-    //this.addFadeOutAnimation('imageQuote0','textQuote0',5000)
+
   }
  
   goToQuote(){
