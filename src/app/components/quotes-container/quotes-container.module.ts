@@ -11,7 +11,8 @@ import { CustomButtomModule } from '../custom-buttom/custom-buttom.module';
   ],
   imports: [
     CommonModule,
-    CustomButtomModule
+    CustomButtomModule,
+    
   ],
   exports:[
     QuotesContainerComponent

@@ -1,0 +1,45 @@
+
+[
+  {
+    "isVisible": true,
+    "text": "Miyamoto Mushashi was a samurai, that killed 70 mens, and say this quote: Once you understand the way oadly, you can see it in all things.",
+    "imageSrc": "/../assets/images/quote0.jpg",
+    "imageAlt": "miyamoto"
+  },
+  {
+    "isVisible": false,
+    "text":  "Whatever happens, happensand the things that make you happy. When faced with life's challenges, consider that your greatest adversary  is often right beside you, ready to strike. The question is, how will you respond?  Take a moment to eathe, for in most cases,   the worst thing that can happen  is already in the past or maybe in  the future.     The present moment offers an opportunity to focus on yourself and the things that ing you happiness",
+    "imageSrc": "/../assets/images/quote1.jpg",
+    "imageAlt": "quote1"
+  },
+  {
+    "isVisible": false,
+    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "imageSrc": "/../assets/images/quote2.jpg",
+    "imageAlt": "quote2"
+  },
+  {
+    "isVisible": false,
+    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "imageSrc": "/../assets/images/quote3.jpg",
+    "imageAlt": "quote3"
+  },
+  {
+    "isVisible": false,
+    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "imageSrc": "/../assets/images/quote4.jpg",
+    "imageAlt": "quote4"
+  },
+  {
+    "isVisible": false,
+    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "imageSrc": "/../assets/images/quote5.webp",
+    "imageAlt": "quote5"
+  },
+  {
+    "isVisible": false,
+    "text": "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "imageSrc": "/../assets/images/quote6.jpg",
+    "imageAlt": "quote6"
+  }
+]
