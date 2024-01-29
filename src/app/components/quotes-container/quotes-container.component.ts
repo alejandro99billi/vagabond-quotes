@@ -6,6 +6,7 @@ interface Container {
   text: string;
   imageSrc: string;
   imageAlt: string;
+  isFinalQuote: boolean
 }
 
 @Component({

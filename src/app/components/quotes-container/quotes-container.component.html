@@ -1,6 +1,6 @@
-<div class="conter-quotes">
-  <ng-container *ngFor="let container of containers; let i = index">
-    <ng-container *ngIf="container.isVisible">
+<ng-container *ngFor="let container of containers; let i = index">
+  <ng-container *ngIf="container.isVisible">
+    <div class="conter-quotes">
       <div class="text-continer quote-text">
         <p
           class="animate__animated animate__fadeInLeft animate__slower quote-text animate__delay-2s custom-text"
@@ -15,15 +15,20 @@
         [id]="'imageQuote' + i"
         class="animate__animated animate__fadeInRight animate__slower quote-images"
       />
-    </ng-container>
+    </div>
+    <div
+      class="custom-button animate__animated animate__fadeInRight animate__slower"
+    >
+      <app-custom-buttom
+        *ngIf="container.isFinalQuote"
+        description="Read Again"
+        (action)="goToQuote()"
+      ></app-custom-buttom>
+      <app-custom-buttom
+        *ngIf="!container.isFinalQuote"
+        description="Next Quote"
+        (action)="goToQuote()"
+      ></app-custom-buttom>
+    </div>
   </ng-container>
-</div>
-
-<div
-  class="custom-button animate__animated animate__fadeInRight animate__slower"
->
-  <app-custom-buttom
-    description="Next Quote"
-    (action)="goToQuote()"
-  ></app-custom-buttom>
-</div>
+</ng-container>
