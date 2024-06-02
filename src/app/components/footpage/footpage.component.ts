@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DEPLOY_URL } from 'src/constants';
 import { environment } from 'src/environments/environment';
 
 
