@@ -27,7 +27,7 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: npm run build --prod --output-path=dist/musayi-miyamato-quotes
+        run: npm run build-github --prod --output-path=dist/musayi-miyamato-quotes
 
       - name: Upload artifact for deployment
         uses: actions/upload-artifact@v4
