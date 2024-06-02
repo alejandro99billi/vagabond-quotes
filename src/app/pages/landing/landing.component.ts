@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { delay } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-landing',
@@ -8,6 +9,8 @@ import { delay } from 'rxjs';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  
+  deployUrl = environment.deployUrl;
   
   showThirdImage = false;
   showSecondImage = false;

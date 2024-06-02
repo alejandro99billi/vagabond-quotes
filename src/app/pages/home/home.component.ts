@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -8,6 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit  {
+
+  deployUrl = environment.deployUrl;
+
   title = 'MusayiMiyamatoQuotes';
   audioFiles = [
     { title: 'Ladyfingers', link: '/assets/music/Ladyfingers.mp3' }

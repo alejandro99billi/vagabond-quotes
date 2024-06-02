@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 interface Container {
   isVisible: boolean;
@@ -15,7 +16,9 @@ interface Container {
   styleUrls: ['./quotes-container.component.scss']
 })
 export class QuotesContainerComponent implements OnInit {
-
+  
+  deployUrl = environment.deployUrl;
+  
   currentIndex = 0;
 
   constructor(private http: HttpClient) {}

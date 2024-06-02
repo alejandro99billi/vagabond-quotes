@@ -2,14 +2,14 @@
   <img
     *ngIf="!showSecondImage"
     id="wall1"
-    src="/../assets/images/musashi-wall.jpeg"
+    [src]="deployUrl + '/assets/images/musashi-wall.jpeg'"
     alt="wallpaper"
     class="landing-image animate__animated animate__fadeInLeft animate__slower"
   />
   <img
     id="wall2"
     *ngIf="showSecondImage"
-    src="/../assets/images/mushashiVSkojiro.webp"
+    [src]="deployUrl + '/assets/images/mushashiVSkojiro.webp'"
     alt="wallpaper"
     class="landing-image animate__animated animate__fadeInLeft animate__slower"
   />
