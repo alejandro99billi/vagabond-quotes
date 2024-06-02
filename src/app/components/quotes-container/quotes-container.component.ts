@@ -18,6 +18,7 @@ interface Container {
 export class QuotesContainerComponent implements OnInit {
   
   deployUrl = environment.deployUrl;
+  jsonUrl = this.deployUrl + '/assets/descriptions.json'
   
   currentIndex = 0;
 
@@ -26,7 +27,8 @@ export class QuotesContainerComponent implements OnInit {
   containers: Container[] = [];
   
   loadContainersFromJson() {
-    this.http.get<Container[]>(this.deployUrl + '/assets/descriptions.json').subscribe(data => {
+    this.http.get<Container[]>(this.jsonUrl).subscribe(data => {
+      console.log(this.jsonUrl)
       this.containers = data;
     });
   }
