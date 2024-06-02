@@ -8,6 +8,13 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        },
+        "architect": {
+          "build": {
+            "options": {
+              "outputPath": "dist/musayi-miyamato-quotes"
+            }
+          }
         }
       },
       "root": "",
@@ -97,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
