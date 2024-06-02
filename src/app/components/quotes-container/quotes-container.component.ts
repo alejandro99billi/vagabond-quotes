@@ -26,7 +26,7 @@ export class QuotesContainerComponent implements OnInit {
   containers: Container[] = [];
   
   loadContainersFromJson() {
-    this.http.get<Container[]>('/../assets/descriptions.json').subscribe(data => {
+    this.http.get<Container[]>(this.deployUrl + '/assets/descriptions.json').subscribe(data => {
       this.containers = data;
     });
   }
