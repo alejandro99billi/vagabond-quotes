@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist/musayi-miyamato-quotes"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Angular usa il routing lato client: senza questo /home e /landing danno 404 al refresh
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
