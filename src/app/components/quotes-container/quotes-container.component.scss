@@ -21,7 +21,7 @@
 .quote-text {
   font-size: clamp(15px, 1.4vw, 20px);
   text-align: center;
-  color: #39434b;
+  color: #2b4c7e; // stesso blu indaco dei pulsanti
   font-style: italic;
   max-width: 70%;
   overflow-wrap: break-word;
@@ -39,6 +39,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin: 20px 0;
 }
 

@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class CustomButtomComponent {
   @Input() description: string = '';
+  @Input() highlight = false;
   @Output() action = new EventEmitter<string>();
   performAction() {
     this.action.emit(); 

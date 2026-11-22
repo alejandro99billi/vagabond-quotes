@@ -42,17 +42,27 @@ export class QuotesContainerComponent implements OnInit {
  
   
   goToQuote() {
- 
+    this.showQuote(this.currentIndex + 1);
+  }
+
+  goToPreviousQuote() {
+    this.showQuote(this.currentIndex - 1);
+  }
+
+  private showQuote(index: number) {
+    if (!this.containers.length) {
+      return;
+    }
+
     this.addFadeOutAnimation(`imageQuote${this.currentIndex}`, `textQuote${this.currentIndex}`, 0);
 
     this.containers[this.currentIndex].isVisible = false;
-    
-    this.currentIndex = (this.currentIndex + 1) % this.containers.length;
-    
+
+    const total = this.containers.length;
+    this.currentIndex = ((index % total) + total) % total;
+
     this.containers[this.currentIndex].isVisible = true;
   }
-
-  
 
   addFadeOutAnimation(imageId: string, paragraphId: string, delayMilliseconds: number) {
     setTimeout(() => {

@@ -20,12 +20,20 @@
       class="custom-button animate__animated animate__fadeInRight animate__slower"
     >
       <app-custom-buttom
+        *ngIf="i > 0"
+        [highlight]="true"
+        description="Previous Quote"
+        (action)="goToPreviousQuote()"
+      ></app-custom-buttom>
+      <app-custom-buttom
         *ngIf="container.isFinalQuote"
+        [highlight]="true"
         description="Read Again"
         (action)="goToQuote()"
       ></app-custom-buttom>
       <app-custom-buttom
         *ngIf="!container.isFinalQuote"
+        [highlight]="true"
         description="Next Quote"
         (action)="goToQuote()"
       ></app-custom-buttom>
