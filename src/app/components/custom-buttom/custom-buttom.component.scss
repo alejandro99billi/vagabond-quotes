@@ -1,12 +1,4 @@
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #060505;
-}
-
 .button {
   border: 2px solid #333333;
   height: 80px;
@@ -95,9 +87,13 @@ body {
   filter: hue-rotate(0deg);
   border: 2px solid #333333;
   transition: all 0.1s linear;
+  cursor: pointer;
+  text-align: center;
+  max-width: calc(100vw - 30px);
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     span {
       position: absolute;
       display: block;

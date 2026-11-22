@@ -6,10 +6,22 @@
     box-sizing: border-box;
   }
 
+html,
 body {
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    // Le animazioni fadeInLeft/fadeInRight spostano gli elementi fuori schermo:
+    // senza questo compare lo scroll orizzontale su smartphone.
+    overflow-x: hidden;
+}
+
+body {
     user-select: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 // /* Estilos para pantallas pequeñas (móviles) */
